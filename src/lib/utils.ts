@@ -21,7 +21,7 @@ export function formatNumber(n: number) {
 }
 
 export function siteUrl() {
-  return (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+  return (process.env.NEXT_PUBLIC_SITE_URL ?? "https://nfc-point-gamma.vercel.app").replace(/\/$/, "");
 }
 
 /** Разрешаем только безопасные схемы ссылок (https, http, tel, mailto). Иначе null. */
